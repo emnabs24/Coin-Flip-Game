@@ -39,9 +39,19 @@
   let computerSecondMove = '';
   if (computerSecondPick >= 0 && computerSecondPick < 0.5){
     computerSecondMove = 'Head'
-  }else (computerSecondMove >= 0 && computerSecondMove < 0.5){
+  }else (computerSecondMove >= 0 && computerSecondMove < 0.5)
     computerSecondMove = 'Tail'
-  }
+  
+
+let playerGuess1 = '' ;
+
+if(computerSecondMove === 'Tail'){
+  playerGuess1 = 'Congratulation. You won!'
+}else{
+  playerGuess1 = 'Sorry. You lose!'
+}
+ console.log(playerGuess1)
+
   
   "
         ;
