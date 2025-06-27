@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Coin Flip Game</h1>
+    <div class="coin">
+      <div class="image-container">
+        <img src="game-coin.png" alt="" />
+      </div>
+      <button
+        class="front"
+        onclick="
+  let computerFirstPick = Math.random();
+  let computerMove = '';
+  if (computerFirstPick >= 0 && computerFirstPick < 0.5){
+    computerMove = 'Head';
+  }else computerMove = 'Tail'
+  
+  let playerGuess='';
+  if(computerFirstPick === 'head'){
+    playerGuess=('Congratulation. You won! ')
+  }else{
+    playerGuess=('Sorry. You lose! ')
+    console.log(playerGuess)
+  }
+  "
+      >
+        Heads
+      </button>
+      <button
+        class="back"
+        onclick="
+  let computerSecondPick = Math.random();
+  let computerSecondMove = '';
+  if (computerSecondPick >= 0 && computerSecondPick < 0.5){
+    computerSecondMove = 'Head'
+  }else (computerSecondMove >= 0 && computerSecondMove < 0.5){
+    computerSecondMove = 'Tail'
+  }
+  
+  "
+        ;
+      >
+        Tails
+      </button>
+    </div>
+  </body>
+</html>

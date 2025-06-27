@@ -1,0 +1,6 @@
+img{
+    width: 150px;
+    height: 150px;
+    /* transform: rotate3d(150); */
+    transform:rotate(y) ;
+}
