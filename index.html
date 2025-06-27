@@ -17,16 +17,15 @@
         onclick="
   let computerFirstPick = Math.random();
   let computerMove = '';
-   computerFirstPick >= 0 && computerFirstPick < 0.5 ?
-    computerMove = 'Head' :  computerMove = 'Tail'
+   computerFirstPick >= 0 && computerFirstPick < 0.5 ? computerMove = 'Head' :  computerMove = 'Tail';
   
   let playerGuess='';
-  if(computerFirstPick === 'head'){
+  if(computerMove === 'Head'){
     playerGuess=('Congratulation. You won! ')
   }else{
     playerGuess=('Sorry. You lose! ')
     console.log(playerGuess)
-  }
+  };
   "
       >
         Heads
@@ -36,10 +35,8 @@
         onclick="
   let computerSecondPick = Math.random();
   let computerSecondMove = '';
-  computerSecondPick >= 0 && computerSecondPick < 0.5 ?
-    computerSecondMove = 'Head' :
- computerSecondMove >= 0 && computerSecondMove < 0.5
-    computerSecondMove = 'Tail'
+  computerSecondPick >= 0 && computerSecondPick < 0.5 ? computerSecondMove = 'Head' : computerSecondMove = 'Tail';
+    
   
 
 let playerGuess1 = '' ;
@@ -48,7 +45,7 @@ if(computerSecondMove === 'Tail'){
   playerGuess1 = 'Congratulation. You won!'
 }else{
   playerGuess1 = 'Sorry. You lose!'
-}
+};
  console.log(playerGuess1)
 
   
